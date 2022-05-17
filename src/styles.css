@@ -1,0 +1,89 @@
+/*
+selector {
+    eigenschaft: wert;
+}
+*/
+
+/*Alle Elemente
+* {
+}
+
+/* Alle H1
+h1 {
+  color: #ff0000;
+}
+
+/* Klasse selektiert alle Elemente einer class .className
+.blue {
+  color: blue;
+}
+
+/*ID wird mit #idName
+#headline {
+  color: aliceblue;
+}
+
+body #headline {
+  color: pink;
+}
+
+body #headline {
+  color: black;
+}
+*/
+
+:root {
+  /* CssVariable */
+  --primary: #5863f8;
+  --dark: #070707;
+  --font-stack: Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-stack);
+  line-height: 1.4;
+  color: var(--dark);
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  /*VH ist Viewporthöhe*/
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.btn {
+  border: 0;
+}
+
+.rounded {
+  border-radius: 0 5px 5px 0;
+}
+
+/* Selektiere das SVG Element, dessen Elternteil eine Element ist mit der Klasse .btn*/
+/* .btn > svg {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+} */
+
+.icon {
+  fill: #ffffff !important;
+}

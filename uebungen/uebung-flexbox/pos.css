@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+section {
+  border-bottom: 1px solid #000;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 300px;
+}
+
+.row {
+  width: 100%;
+  min-width: 10px;
+  padding: 1rem 0;
+  min-height: 300px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  flex-direction: row;
+  /* justify-content:  Platzverteilung auf der X-Achse;*/
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.col {
+  min-width: 20px;
+  min-height: 20px;
+  flex-grow: 1;
+}
+
+.trolley-grey {
+  background: #7d7c84;
+}
+
+.sea-green {
+  background: #2d93ad;
+  flex-basis: 100%;
+}
+
+.middle-red {
+  background: #de8f6e;
+  flex-basis: calc(50% - 20px);
+}
+
+.black {
+  background: #000;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  flex: 1 1 50%;
+}
+
+.orange {
+  background: orange;
+}
+
+.olive {
+  background: olive;
+  flex-grow: 1;
+}

@@ -11,24 +11,108 @@
   </head>
   <body>
     <div class="wrapper">
-      <h1>Super tolle Wetter-App</h1>
-      <form method="get" action="">
-        <input type="search" placeholder="Gib eine Stadt ein" name="search" />
-        <button type="submit" class="btn bg-primary rounded">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="24px"
-            height="24px"
-            fill="#000000"
+      <div class="header">
+        <h1 id="headline" title="Huhu">Super tolle Wetter-App</h1>
+        <form method="get" action="" id="form">
+          <input type="search" placeholder="Gib eine Stadt ein" name="search" />
+          <button type="submit" class="btn bg-primary rounded">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24px"
+              height="24px"
+              fill="#000000"
+              class="icon"
+            >
+              <path
+                d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"
+              />
+            </svg>
+          </button>
+          <!-- Error Feld-->
+          <span id="fehler"></span>
+        </form>
+      </div>
+      <!-- Hier die Wetterdaten-->
+      <div id="results">
+        <!-- 1. Wetterergebis-->
+        <div class="today">
+          <h2>Heute</h2>
+          <img
             class="icon"
-          >
-            <path
-              d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="Icon"
+          />
+          <p id="desc-today">Mäßiger Regen</p>
+
+          <p class="inline">20°</p>
+          <p class="inline">30°</p>
+        </div>
+        <!-- 1. Wetterergebis endet hier-->
+
+        <div class="row">
+          <!-- card 1-->
+          <div class="card">
+            <h2>Fr</h2>
+            <img
+              class="icon"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="Icon"
             />
-          </svg>
-        </button>
-      </form>
+            <p class="description">Mäßiger Regen</p>
+            <p class="inline ml-1">20°</p>
+            <p class="inline">30°</p>
+          </div>
+          <!-- card 2-->
+          <div class="card">
+            <h2>Fr</h2>
+            <img
+              class="icon"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="Icon"
+            />
+            <p class="description">Mäßiger Regen</p>
+            <p class="inline ml-1">20°</p>
+            <p class="inline">30°</p>
+          </div>
+          <!-- card 3-->
+          <div class="card">
+            <h2>Fr</h2>
+            <img
+              class="icon"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="Icon"
+            />
+            <p class="description">Mäßiger Regen</p>
+            <p class="inline ml-1">20°</p>
+            <p class="inline">30°</p>
+          </div>
+          <!-- card 4-->
+          <div class="card">
+            <h2>Fr</h2>
+            <img
+              class="icon"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="Icon"
+            />
+            <p class="description">Mäßiger Regen</p>
+            <p class="inline ml-1">20°</p>
+            <p class="inline">30°</p>
+          </div>
+          <!-- card 5-->
+          <div class="card">
+            <h2>Fr</h2>
+            <img
+              class="icon"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="Icon"
+            />
+            <p class="description">Mäßiger Regen</p>
+            <p class="inline ml-1">20°</p>
+            <p class="inline">30°</p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,0 +1,42 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+a,
+div {
+  background-color: brown;
+  width: 300px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+}
+
+img {
+  width: 300px;
+  display: block;
+}
+/*
+span {
+  display: none;
+  visibility: hidden;
+}*/
+
+/*
+display: block;
+display: inline;
+display: inline-block;
+
+display: flex; Sei du selbst wie Block Element, aber deine direkten Kinder wie Flexbox;
+display: inline-flex;
+display: none;
+*/
+
+span {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+p {
+  width: 600px;
+  text-align: justify;
+}

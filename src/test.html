@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="test.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+    <style>
+      .blue {
+        color: blue;
+      }
+      .none {
+        visibility: hidden;
+      }
+
+      .show {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="headline">Hallo Welt</h1>
+    <div class="example none"></div>
+    <div class="example"></div>
+    <button>Klick mich</button>
+    <div>
+      <input type="text" name="" id="input" value="" />
+      <p id="result"></p>
+      <!-- 
+        Event Listener für das Inputfeld Schreiben: 
+        immer dann wenn sich der Wert des Inputs (value) verändert
+        soll das p Element den gleichen Text ausgeben.
+      -->
+    </div>
+    <img
+      src="http://via.placeholder.com/200"
+      alt=""
+      id="userimage"
+      width="200"
+      height="200"
+    />
+    <div id="user"></div>
+
+    <!-- Ausgabe des Nutzer Namens (Vorname und Nachname)-->
+  </body>
+</html>
